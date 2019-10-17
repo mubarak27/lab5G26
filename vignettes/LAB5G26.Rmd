@@ -1,0 +1,37 @@
+---
+title: "geocode"
+author: "Group 26"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{linreg}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+  # Introduction
+  To install this package you can use the code below:
+
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+devtools::install_github('mubhu398/lab5G26',build_vignettes = TRUE)
+```
+
+# Import
+
+```{r}
+    library(lab5G26)
+```
+
+# Methods
+
+To start with, we can use the initialize the class to input city name to get corridnates.
+
+```{r}
+example <- geocode("Stockholm")
+example$getCoordinate()
+```
+
+The `geocode()` is an initialize method for this lab assignment we create a package that connect to API and comptute coordinates longitude and latitude form user given input. 
+
+The `getCoordinate()` method can print out the cooridantes like Longitude and Latitude and city name.
+
+
